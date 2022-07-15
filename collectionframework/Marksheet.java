@@ -1,0 +1,74 @@
+package com.rays.collectionframework;
+
+public class Marksheet implements Comparable<Marksheet> {
+	private String rollno;
+	private String fname;
+	private String lname;
+	private int phy;
+	private int che;
+	private int math;
+
+	public String getRollno() {
+		return rollno;
+	}
+
+	public void setRollno(String rollno) {
+		this.rollno = rollno;
+	}
+
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getLname() {
+		return lname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	public int getPhy() {
+		return phy;
+	}
+
+	public void setPhy(int phy) {
+		this.phy = phy;
+	}
+
+	public int getChe() {
+		return che;
+	}
+
+	public void setChe(int che) {
+		this.che = che;
+	}
+
+	public int getMath() {
+		return math;
+	}
+
+	public void setMath(int math) {
+		this.math = math;
+	}
+
+	@Override
+	public int compareTo(Marksheet o) {
+		return this.rollno.compareTo(o.rollno);
+	}
+
+	public Marksheet nextElement(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean hasMoreElements() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
